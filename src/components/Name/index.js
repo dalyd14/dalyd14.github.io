@@ -1,10 +1,9 @@
 import React from 'react'
+import './name.css'
 
 const Name = () => {
     return (
-        <div>
-            <h1>David Daly</h1>
-        </div>
+        <h1>David Daly</h1>
     )
 }
 
