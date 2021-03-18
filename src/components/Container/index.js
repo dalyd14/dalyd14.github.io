@@ -1,9 +1,20 @@
 import React from 'react'
 
-const Container = (props) => {
-    return (
-        <h1>Here I am</h1>
-    )
+import Bootcamp from '../BootcampProjects'
+import Personal from '../PersonalProjects'
+import Contact from '../Contact'
+import About from '../About'
+
+const Container = ({ container }) => {
+
+    const componentArr = [
+        <Bootcamp />,
+        <Personal />,
+        <About />,
+        <Contact />        
+    ]
+
+    return (componentArr[Number(container)])
 }
 
 export default Container

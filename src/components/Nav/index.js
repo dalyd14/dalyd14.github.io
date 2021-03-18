@@ -7,44 +7,66 @@ const Nav = () => {
     const navOptions = [
         {
             title: 'Bootcamp Projects',
-            className: 'bp-menu-item'
+            className: 'bp-menu-item '
         },
         {
             title: 'Personal Projects',
-            className: 'pp-menu-item'
+            className: 'pp-menu-item '
         },
         {
             title: 'About',
-            className: 'ab-menu-item'
+            className: 'ab-menu-item '
         },
         {
             title: 'Contact',
-            className: 'ct-menu-item'
+            className: 'ct-menu-item '
         }
     ]
 
     const [container, setContainer] = useState(-1)
 
+    const [menuPressed, setMenuPressed] = useState(true)
+
     const switchContainer = (e) => {
+        setMenuPressed(false)
         setContainer(e.target.closest('li').getAttribute('data-id'))
+    }
+    const pressMenu = (e) => {
+        if (!menuPressed) {
+            setMenuPressed(true)
+        }
     }
 
     return (
         <nav>
             <ul className="file-cabinet">
                 <li className="file-cabinet-menu">
-                    <span className="material-icons">menu</span>
-                    <h3>Menu</h3>
+                    <span 
+                        className="material-icons" 
+                        style={ menuPressed ? {color: 'black'} : {color: 'white'}}
+                        onClick={pressMenu}>menu</span>
+                    <h3>{menuPressed && 'Menu'}</h3>
                 </li>
                 { navOptions.map((nav, i) => 
-                    (<li onClick={switchContainer} className={`file-item ${nav.className}`} key={i} data-id={i}>
+                    (<li 
+                        onClick={switchContainer} 
+                        className={
+                            'file-item ' + 
+                            nav.className + 
+                            ((!menuPressed && ((Number(container) >= 0) && (Number(container) < i))) ? 'option-down' : '') +
+                            ((!menuPressed && ((Number(container) >= 0) && (Number(container) === i))) ? 'option-selected' : '')
+                        } 
+                        data-id={i}
+                        key={i}>
                         <h3>{nav.title}</h3>
-                        {
-                            Number(container) >= 0 &&
-                            Number(container) === i && 
-                            <Container container={container}></Container>
-                        }
-                        
+                        <div className={ 'component-container ' + (((Number(container) >= 0) && (Number(container) === i)) ? 'component-visible' : '')}>
+                            {
+                                !menuPressed &&
+                                Number(container) >= 0 &&
+                                Number(container) === i && 
+                                <Container container={container}></Container>
+                            }                            
+                        </div>
                     </li>)
                 ) }
             </ul>
