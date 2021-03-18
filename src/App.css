@@ -1,3 +1,7 @@
+header {
+    height: 100%;
+}
+
 .btn {
     display: flex;
     justify-content: center;

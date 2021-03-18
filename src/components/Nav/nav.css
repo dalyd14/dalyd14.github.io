@@ -1,19 +1,44 @@
+nav {
+    height: 100%;
+}
+
 .file-cabinet {
+    height: 100%;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: flex-start;
 
     list-style: none;
     padding: 0;
 }
 
-.file-item {
-    border-top: solid 1px black;
+.file-cabinet-menu {
+    height: 8%;
 
-    border-radius: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.file-cabinet-menu h3 {
+    margin: 0;
+    color: var(--gunmetal);
+}
+
+.file-item {
+    height: calc(23% + 50px);
+
+    border-radius: 50px 50px 0 0;
 
     text-align: center;
     color: white;
+
+    padding-top: 3rem;
+}
+
+.file-cabinet > .file-item ~ .file-item {
+    margin-top: -50px;
 }
 
 .pp-menu-item {

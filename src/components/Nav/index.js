@@ -24,6 +24,10 @@ const Nav = () => {
     return (
         <nav>
             <ul className="file-cabinet">
+                <li className="file-cabinet-menu">
+                    <span className="material-icons">menu</span>
+                    <h3>Menu</h3>
+                </li>
                 { navOptions.map((nav, i) => 
                     (<li className={`file-item ${nav.className}`} key={i}>
                         <h3>{nav.title}</h3>
