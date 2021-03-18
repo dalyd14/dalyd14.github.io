@@ -1,3 +1,19 @@
+:root {
+  --light-cyan: #E0FBFC;
+  --pale-cerulean: #98C1D9;
+  --bdazzled-blue: #3D5A80;
+  --gunmetal: #293241;
+  --burnt-sienna: #EE6C4D;
+}
+
 * {
   box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #FFFFFF;
 }

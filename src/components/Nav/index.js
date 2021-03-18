@@ -3,21 +3,30 @@ import './nav.css'
 
 const Nav = () => {
     const navOptions = [
-        'Bootcamp Projects',
-        'Personal Projects',
-        'About',
-        'Contact',
-        'Resume'
+        {
+            title: 'Bootcamp Projects',
+            className: 'bp-menu-item'
+        },
+        {
+            title: 'Personal Projects',
+            className: 'pp-menu-item'
+        },
+        {
+            title: 'About',
+            className: 'ab-menu-item'
+        },
+        {
+            title: 'Contact',
+            className: 'ct-menu-item'
+        }
     ]
 
     return (
         <nav>
-            <ul className="nav">
+            <ul className="file-cabinet">
                 { navOptions.map((nav, i) => 
-                    (<li className="nav-item" key={i}>
-                        <a className="nav-link" href="#">
-                            <h3>{nav}</h3>
-                        </a>
+                    (<li className={`file-item ${nav.className}`} key={i}>
+                        <h3>{nav.title}</h3>
                     </li>)
                 ) }
             </ul>

@@ -3,7 +3,13 @@ import './name.css'
 
 const Name = () => {
     return (
-        <h1>David Daly</h1>
+        <div className="header-row">
+            <h1>David Daly</h1>
+            <button className="btn" type="button">
+                <span className="material-icons">widgets</span>
+            </button>
+        </div>
+        
     )
 }
 
