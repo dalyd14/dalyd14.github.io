@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useState } from 'react'
 import './nav.css'
+
+import Container from '../Container'
 
 const Nav = () => {
     const navOptions = [
@@ -21,6 +23,12 @@ const Nav = () => {
         }
     ]
 
+    const [container, setContainer] = useState(-1)
+
+    const switchContainer = (e) => {
+        setContainer(e.target.closest('li').getAttribute('data-id'))
+    }
+
     return (
         <nav>
             <ul className="file-cabinet">
@@ -29,8 +37,14 @@ const Nav = () => {
                     <h3>Menu</h3>
                 </li>
                 { navOptions.map((nav, i) => 
-                    (<li className={`file-item ${nav.className}`} key={i}>
+                    (<li onClick={switchContainer} className={`file-item ${nav.className}`} key={i} data-id={i}>
                         <h3>{nav.title}</h3>
+                        {
+                            Number(container) >= 0 &&
+                            Number(container) === i && 
+                            <Container container={container}></Container>
+                        }
+                        
                     </li>)
                 ) }
             </ul>

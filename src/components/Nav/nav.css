@@ -16,12 +16,21 @@ nav {
 
 .file-cabinet-menu {
     height: 8%;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.file-cabinet-menu span {
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-left: 10px;
+
+    cursor: pointer;
 }
 .file-cabinet-menu h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     margin: 0;
     color: var(--gunmetal);
 }
@@ -34,7 +43,7 @@ nav {
     text-align: center;
     color: white;
 
-    padding-top: 3rem;
+    padding-top: 50px;
 }
 
 .file-cabinet > .file-item ~ .file-item {
