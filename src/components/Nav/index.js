@@ -40,15 +40,17 @@ const Nav = () => {
     return (
         <nav>
             <ul className="file-cabinet">
-                <li className="file-cabinet-menu">
+                <li className={'file-cabinet-menu ' + (menuPressed ? 'menu-pressed' : '')}>
                     <div className="menu-button-div">
                         <span 
                             className="material-icons cursor-pointer" 
-                            style={ menuPressed ? {color: 'var(--gunmetal)'} : {color: 'white'}}
                             onClick={pressMenu}>menu</span>
                     </div>
 
-                    <h3>{menuPressed && 'Menu'}</h3>
+                    <h1>David Daly</h1>
+                </li>
+                <li className="file-cabinet-page-header">
+                    <h3>Menu</h3>
                 </li>
                 { navOptions.map((nav, i) => 
                     (<li 
