@@ -14,12 +14,16 @@
     align-items: center;
 }
 .project-sub-container .project {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     margin: 2rem 0;
 
-    border: solid 1px var(--gunmetal);
     background-color: white;
     color: var(--gunmetal);
+    box-shadow: 0 4px 8px 0 var(--gunmetal), 0 6px 20px 0 var(--gunmetal);
 }

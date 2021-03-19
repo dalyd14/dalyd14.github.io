@@ -119,9 +119,11 @@ nav {
 
 .component-container {
     opacity: 0;
-    transition: opacity 5s;
+    transition: opacity 1s;
 
     overflow-y: scroll;
+
+    height: 92%;
 }
 
 .component-visible {

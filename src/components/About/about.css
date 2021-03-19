@@ -1,0 +1,14 @@
+.about-me-container {
+    margin: 2rem;   
+}
+
+.profile-pic {
+    width: 300px;
+
+    border-radius: 25px;
+}
+
+.about-me-text {
+    margin-top: 1rem;
+    text-align: left;
+}

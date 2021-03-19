@@ -1,15 +1,14 @@
 import React from 'react'
 
-import Bootcamp from '../BootcampProjects'
-import Personal from '../PersonalProjects'
+import Projects from '../Projects'
 import Contact from '../Contact'
 import About from '../About'
 
 const Container = ({ container }) => {
 
     const componentArr = [
-        <Bootcamp />,
-        <Personal />,
+        <Projects type="bootcamp"/>,
+        <Projects type="personal"/>,
         <About />,
         <Contact />        
     ]
