@@ -1,0 +1,50 @@
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 20px
+}
+.contact-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-basis: 50%;
+
+    padding: 10px;
+
+    
+}
+.contact-tile a {
+    text-decoration: none;
+
+    background-color: white;
+
+    height: 150px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.contact-text {
+    margin-top: 1rem;
+}
+
+.contact-tile .material-icons,
+.react-icon,
+.contact-text {
+    color: var(--gunmetal);
+}
+
+.contact-tile .material-icons {
+    font-size: 4rem;
+}
+.react-icon {
+    height: 4rem;
+    width: 4rem;
+}
