@@ -10,9 +10,17 @@
     flex-basis: 100%;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin: 2rem 2rem
 }
+.project-sub-container h2 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
 .project-sub-container .project {
     width: 300px;
     height: 300px;
@@ -21,9 +29,13 @@
     justify-content: center;
     align-items: center;
 
-    margin: 2rem 0;
+    margin-bottom: 1rem;
 
     background-color: white;
     color: var(--gunmetal);
     box-shadow: 0 4px 8px 0 var(--gunmetal), 0 6px 20px 0 var(--gunmetal);
+}
+
+.project-img {
+    width: 300px
 }

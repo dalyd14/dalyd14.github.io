@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Tic-Tac-Whoa",
+        "github_url": "https://github.com/jarrettdev1997/tic-tac-whoa",
+        "site_url": "https://tic-tac-toe-project-two.herokuapp.com/"
+    },
+    {
+        "title": "Timeless Movies",
+        "github_url": "https://github.com/dalyd14/movie-timeline",
+        "site_url": "https://dalyd14.github.io/movie-timeline/"
+    },
+    {
+        "title": "Weather Dashboard",
+        "github_url": "https://github.com/dalyd14/weather-dashboard",
+        "site_url": "https://dalyd14.github.io/weather-dashboard/"
+    },
+    {
+        "title": "Note Taker",
+        "github_url": "https://github.com/dalyd14/note-taker",
+        "site_url": "https://bootcamp-note-taker-assignment.herokuapp.com/"
+    },
+    {
+        "title": "Daily Planner",
+        "github_url": "https://github.com/dalyd14/work-day-scheduler",
+        "site_url": "https://dalyd14.github.io/work-day-scheduler/"
+    },
+    {
+        "title": "Coding Quiz",
+        "github_url": "https://github.com/dalyd14/coding-quiz",
+        "site_url": "https://dalyd14.github.io/coding-quiz/"
+    } 
+]
