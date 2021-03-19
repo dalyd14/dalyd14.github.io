@@ -3,7 +3,13 @@ import './nav.css'
 
 import Container from '../Container'
 
-const Nav = () => {
+const Nav = (props) => {
+
+    const {
+        menuPressed,
+        setMenuPressed
+    } = props
+
     const navOptions = [
         {
             title: 'Bootcamp Projects',
@@ -25,7 +31,7 @@ const Nav = () => {
 
     const [container, setContainer] = useState(-1)
 
-    const [menuPressed, setMenuPressed] = useState(true)
+    // const [menuPressed, setMenuPressed] = useState(true)
 
     const switchContainer = (e) => {
         setMenuPressed(false)

@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import Nav from './components/Nav'
+import Resume from './components/Resume'
 
 function App() {
+
+  const [menuPressed, setMenuPressed] = useState(true)
+
   return (
-    <>
+    <section>
       <main>
-        <Nav />
+        <Nav menuPressed={menuPressed} setMenuPressed={setMenuPressed}></Nav>
       </main>
-    </>
+      <Resume menuPressed={menuPressed}></Resume>
+    </section>
   );
 }
 
