@@ -1,5 +1,6 @@
 nav {
     height: 100%;
+    overflow: hidden;
 }
 
 .file-cabinet {
@@ -9,6 +10,7 @@ nav {
 
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .file-cabinet-menu {
@@ -21,14 +23,14 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.file-cabinet-menu span {
+.menu-button-div {
     display: flex;
     align-items: center;
     padding-left: 10px;
-
-    z-index: 5;
-
-    cursor: pointer;
+}
+.file-cabinet-menu span {
+    font-size: 2rem;
+    z-index: 5;    
 }
 .file-cabinet-menu h3 {
     display: flex;
@@ -53,10 +55,6 @@ nav {
 
     transition: top 600ms, border-radius 600ms;
 }
-/* 
-.file-cabinet > .file-item ~ .file-item {
-    margin-top: -50px;
-} */
 
 .bp-menu-item {
     background-color: var(--bdazzled-blue);
@@ -86,7 +84,9 @@ nav {
 
 .component-container {
     opacity: 0;
-    transition: opacity 2s;
+    transition: opacity 4s;
+
+    overflow-y: scroll;
 }
 
 .component-visible {

@@ -41,10 +41,13 @@ const Nav = () => {
         <nav>
             <ul className="file-cabinet">
                 <li className="file-cabinet-menu">
-                    <span 
-                        className="material-icons" 
-                        style={ menuPressed ? {color: 'black'} : {color: 'white'}}
-                        onClick={pressMenu}>menu</span>
+                    <div className="menu-button-div">
+                        <span 
+                            className="material-icons cursor-pointer" 
+                            style={ menuPressed ? {color: 'var(--gunmetal)'} : {color: 'white'}}
+                            onClick={pressMenu}>menu</span>
+                    </div>
+
                     <h3>{menuPressed && 'Menu'}</h3>
                 </li>
                 { navOptions.map((nav, i) => 
@@ -53,13 +56,17 @@ const Nav = () => {
                         className={
                             'file-item ' + 
                             nav.className + 
+                            (menuPressed ? 'cursor-pointer' : '') +
                             ((!menuPressed && ((Number(container) >= 0) && (Number(container) < i))) ? 'option-down' : '') +
                             ((!menuPressed && ((Number(container) >= 0) && (Number(container) === i))) ? 'option-selected' : '')
                         } 
                         data-id={i}
                         key={i}>
                         <h3>{nav.title}</h3>
-                        <div className={ 'component-container ' + (((Number(container) >= 0) && (Number(container) === i)) ? 'component-visible' : '')}>
+                        <div className={ 
+                            'component-container ' + 
+                            (((!menuPressed) && (Number(container) >= 0) && (Number(container) === i)) ? 'component-visible' : '')
+                        }>
                             {
                                 !menuPressed &&
                                 Number(container) >= 0 &&
