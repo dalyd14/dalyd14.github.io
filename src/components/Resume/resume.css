@@ -1,9 +1,8 @@
 a.resume-button {
-
     z-index: 8;
 
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
 
     background-color: var(--light-cyan);
 
@@ -17,7 +16,18 @@ a.resume-button {
     justify-content: center;
     align-items: center;
 
+    box-shadow: 2px 2px 3px lightgray;
+
     transition: top 1s;
+}
+
+a.resume-button:active,
+a.resume-button:visited,
+a.resume-button:hover {
+    text-decoration: none;
+}
+a.resume-button:active {
+    box-shadow: none
 }
 
 a.resume-button.bottom {
@@ -25,13 +35,37 @@ a.resume-button.bottom {
 }
 
 a.resume-button span {
-    height: 100%;
-    width: 100%;
     color: var(--gunmetal);
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 325px) {
+    a.resume-button {
+        height: 50px;
+        width: 50px;
+    }
+    a.resume-button span {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    a.resume-button {
+        height: 60px;
+        width: 60px;
+    }
+    a.resume-button span {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    a.resume-button {
+        right: 5%;
+    }
 }

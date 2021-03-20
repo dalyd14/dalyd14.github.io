@@ -29,9 +29,7 @@ const Nav = (props) => {
         }
     ]
 
-    const [container, setContainer] = useState(-1)
-
-    // const [menuPressed, setMenuPressed] = useState(true)
+    const [container, setContainer] = useState(2)
 
     const switchContainer = (e) => {
         setMenuPressed(false)

@@ -32,7 +32,7 @@
 }
 
 .modalContainer img {
-    width: 300px;
+    width: 75%;
     margin: 10px 0
 }
 
@@ -53,9 +53,28 @@ a.project-btn {
     flex-direction: column;
 }
 a.project-btn {
-    width: 50%;
+    width: 80%;
     margin: 5px
 }
 a.project-btn > *:first-child {
     margin-right: 1rem;
+}
+
+@media only screen and (min-width: 450px) {
+    a.project-btn {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    a.project-btn {
+        width: 260px;
+    }
+    .modalContainer img {
+        width: 50%;
+    }
+    .project-btn-group {
+        flex-direction: row;
+        justify-content: center;
+    }
 }

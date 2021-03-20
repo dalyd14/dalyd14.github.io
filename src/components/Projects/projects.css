@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
 
-    margin: 2rem 2rem
+    padding: 2rem 2rem
 }
 .project-sub-container h2 {
     margin: 0;
@@ -34,8 +34,26 @@
     background-color: white;
     color: var(--gunmetal);
     box-shadow: 0 4px 8px 0 var(--gunmetal), 0 6px 20px 0 var(--gunmetal);
+
+    cursor: pointer;
+}
+
+.project-sub-container .project:active {
+    box-shadow: none
 }
 
 .project-img {
     width: 300px
+}
+
+@media only screen and (min-width: 600px) {
+    .project-sub-container {    
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .project-sub-container {    
+        flex-basis: 33%;
+    }
 }

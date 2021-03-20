@@ -1,7 +1,7 @@
 import React from 'react'
 import './modal.css'
 
-import { Github } from '@icons-pack/react-simple-icons'
+import { Github, Mongodb, Javascript, CssThree, Html5, NodeDotJs, Express, SocketDotIo, Bootstrap } from '@icons-pack/react-simple-icons'
 
 const Modal = ({ onClose, currentProject }) => {
 

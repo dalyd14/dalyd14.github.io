@@ -17,7 +17,6 @@ const Projects = ({ type }) => {
     
     const toggleModal = (project, i) => {
         setCurrentProject({...project, picture: projectImages[i], index: i})
-        console.log("hello", isModalOpen)
         setIsModalOpen(!isModalOpen)
     }
 

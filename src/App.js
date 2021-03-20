@@ -5,7 +5,7 @@ import Resume from './components/Resume'
 
 function App() {
 
-  const [menuPressed, setMenuPressed] = useState(true)
+  const [menuPressed, setMenuPressed] = useState(false)
 
   return (
     <section>

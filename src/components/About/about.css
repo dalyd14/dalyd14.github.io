@@ -3,7 +3,7 @@
 }
 
 .profile-pic {
-    width: 300px;
+    width: 100%;
 
     border-radius: 25px;
 }
@@ -11,4 +11,34 @@
 .about-me-text {
     margin-top: 1rem;
     text-align: left;
+}
+
+@media only screen and (min-width: 450px) {
+    .profile-pic {
+        width: 350px;
+    }
+    .about-me-container {
+        margin: 2rem 4rem;   
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .about-me-container {
+        margin: 2rem 20%;   
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .about-me-container {
+        margin: 2rem auto;
+
+        display: flex;
+        justify-content: center;
+        align-items:flex-start; 
+    }
+
+    .about-me-text {
+        width: 500px;
+        margin-left: 2rem;
+    }
 }
