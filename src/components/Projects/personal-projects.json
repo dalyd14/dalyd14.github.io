@@ -2,16 +2,22 @@
     {
         "title": "Slowpoke Sports: Mobile",
         "github_url": "https://github.com/dalyd14/slowpokes-app",
-        "site_url": "https://slowpoke-sports.herokuapp.com/"
+        "site_url": "https://slowpoke-sports.herokuapp.com/",
+        "technologies": ["NodeDotJs", "Express", "Jquery", "Server side APIs"],
+        "description": "Slowpoke Sports is my personal project that introduced me to the world of web developing. It is a personal aspiration of mine to create a customized platform for Fantasy Football that allows users to feel more in control of their dynasty teams. Currently this app only dislays live scores for men's professional and collegiate football and basketball."
     },
     {
         "title": "FishHawk Capital",
         "github_url": "https://github.com/dalyd14/fishhawk-capital",
-        "site_url": "https://fishhawkcapital.com/"
+        "site_url": "https://fishhawkcapital.com/",
+        "technologies": ["Jquery", "Bootstrap"],
+        "description": "Built for client. FishHawk Capital is a real-estate investment start up. I developed their website so they can have an online presence that allows them to be more visible to potential clients or investors."
     },
     {
         "title": "Veggie Kales",
         "github_url": "https://github.com/dalyd14/veggie-kales",
-        "site_url": "https://veggiekales.com/"
+        "site_url": "https://veggiekales.com/",
+        "technologies": ["Jquery", "Bootstrap"],
+        "description": "Built for client. This website hosts the awesome vegetarian recipes that Veggie Kales develops. It is meant to be used in association with the Veggie Kales instagram."
     }
 ]

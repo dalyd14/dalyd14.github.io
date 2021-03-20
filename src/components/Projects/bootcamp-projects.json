@@ -2,31 +2,43 @@
     {
         "title": "Tic-Tac-Whoa",
         "github_url": "https://github.com/jarrettdev1997/tic-tac-whoa",
-        "site_url": "https://tic-tac-toe-project-two.herokuapp.com/"
+        "site_url": "https://tic-tac-toe-project-two.herokuapp.com/",
+        "technologies": ["Mysql", "NodeDotJs", "Express", "SocketDotIo", "Handlebarsjs"],
+        "description": "Tic-Tac-Whoa was our second group project for the bootcamp (Week 16). This web-app was built so users can quickly and easily challenge their friends to online tic-tac-toe games. Users can view their persistent game history. Our group wanted to stretch the limits of what was required for us by integrating Socket.io technology so that real-time updates could be achieved."
     },
     {
         "title": "Timeless Movies",
         "github_url": "https://github.com/dalyd14/movie-timeline",
-        "site_url": "https://dalyd14.github.io/movie-timeline/"
+        "site_url": "https://dalyd14.github.io/movie-timeline/",
+        "technologies": ["Jquery", "Html5", "CssThree", "Server side APIs"],
+        "description": "Timeless Movies was our first group project for bootcamp (Week 8). We developed a website that displayed the most popular movies by either a certain decade or year. This website utilizes two server side APIs. One was the Wikipedia API in order to receive the most popular movie titles from a given decade or year. And the other was the OMDB API that allowed to look up a certain movie title and recieve information for it."
     },
     {
         "title": "Weather Dashboard",
         "github_url": "https://github.com/dalyd14/weather-dashboard",
-        "site_url": "https://dalyd14.github.io/weather-dashboard/"
+        "site_url": "https://dalyd14.github.io/weather-dashboard/",
+        "technologies": ["Jquery", "Bootstrap", "Server side APIs"],
+        "description": "This Weather Dashboard was Week 6's assignment for bootcamp. This app allows the user to see the present and future weather for their favorite locations as well as a satelite map for the given location. The OpenWeather API was used to receive the weather information."
     },
     {
         "title": "Note Taker",
         "github_url": "https://github.com/dalyd14/note-taker",
-        "site_url": "https://bootcamp-note-taker-assignment.herokuapp.com/"
+        "site_url": "https://bootcamp-note-taker-assignment.herokuapp.com/",
+        "technologies": ["NodeDotJs", "Express"],
+        "description": "The Note Taker app was Week 11's assignment for bootcamp. This app allows users to save and remove notes they would like to take. It was meant to display our knowledge of routes via NodeJs and ExpressJs."
     },
     {
         "title": "Daily Planner",
         "github_url": "https://github.com/dalyd14/work-day-scheduler",
-        "site_url": "https://dalyd14.github.io/work-day-scheduler/"
+        "site_url": "https://dalyd14.github.io/work-day-scheduler/",
+        "technologies": ["Jquery", "Bootstrap"],
+        "description": "This Daily Planner was Week 5's assignment for bootcamp. This web-app allows users to plan their current and future work days by the hour. It showcases my knowledge of Bootstrap and jQuery as well as all the other technologies we have learned up to that time."
     },
     {
         "title": "Coding Quiz",
         "github_url": "https://github.com/dalyd14/coding-quiz",
-        "site_url": "https://dalyd14.github.io/coding-quiz/"
+        "site_url": "https://dalyd14.github.io/coding-quiz/",
+        "technologies": ["Javascript", "Html5", "CssThree"],
+        "description": "This Coding Quiz was Week 4's assignment for bootcamp. This web-app showcases my knowledge of JavaScript, HTML, and CSS as well as tests the user's general coding knowledge."
     } 
 ]
