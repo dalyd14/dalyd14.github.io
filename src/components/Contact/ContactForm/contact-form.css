@@ -1,0 +1,17 @@
+form.contact-form {
+    padding-bottom: 4rem;
+}
+
+.form-container {
+    margin: 1rem 2rem
+}
+
+.form-container label {
+    text-align: left;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
