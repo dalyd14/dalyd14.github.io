@@ -5,27 +5,50 @@ import { Github, Mongodb, Mysql, Javascript, CssThree,
     Html5, NodeDotJs, Express, Jquery, SocketDotIo, Bootstrap } from '@icons-pack/react-simple-icons'
 
 const Technologies = {
-    "Html5": Html5,
-    "CssThree": CssThree,
-    "Javascript": Javascript,
-    "Jquery": Jquery,
-    "Bootstrap": Bootstrap,
-    "NodeDotJs": NodeDotJs,
-    "Express": Express,
-    "Mysql": Mysql,
-    "Mongodb": Mongodb,
-    "SocketDotIo": SocketDotIo
+    "Html5": {
+        comp: Html5,
+        title: "HTML5" 
+    },
+    "CssThree": {
+        comp: CssThree,
+        title: "CSS3" 
+    },
+    "Javascript": {
+        comp: Javascript,
+        title: "JavaScript" 
+    },
+    "Jquery": {
+        comp: Jquery,
+        title: "jQuery" 
+    },
+    "Bootstrap": {
+        comp: Bootstrap,
+        title: "Bootstrap" 
+    },
+    "NodeDotJs": {
+        comp: NodeDotJs,
+        title: "Node.js" 
+    },
+    "Express": {
+        comp: Express,
+        title: "Express" 
+    },
+    "Mysql": {
+        comp: Mysql,
+        title: "MySQL" 
+    },
+    "Mongodb": {
+        comp: Mongodb,
+        title: "mongoDB" 
+    },
+    "SocketDotIo": {
+        comp: SocketDotIo,
+        title: "socket.io"
+    }
+
 }
 
 const Modal = ({ onClose, currentProject }) => {
-
-    // const techComponents = currentProject.technologies.map((tech, i) => {
-    //     const TechComp = Technologies[tech];
-    //     return <TechComp key={i} />
-    // })
-
-    // console.log(techComponents)
-
 
     return (
         <div className="modalBackdrop">
@@ -39,16 +62,26 @@ const Modal = ({ onClose, currentProject }) => {
                     {
                         currentProject.technologies.map((tech, i) => {
                             if (tech in Technologies) {
-                                const TechComp = Technologies[tech];
-                                console.log(TechComp)
-                                return <TechComp key={i} />                                
+                                const TechComp = Technologies[tech].comp;
+                                return (
+                                <div key={'container' + i}>
+                                    <TechComp key={'comp' + i} />
+                                    <h6 key={'title' + i}>{Technologies[tech].title}</h6>
+                                </div> 
+                                )                                
                             } else if (tech === "Server side APIs") {
                                 return (
-                                    <span key={i} className="material-icons">dns</span>
+                                    <div key={'container' + i}>
+                                        <span key={'comp' + i} className="material-icons">dns</span>
+                                        <h6 key={'title' + i}>{'3rd Party APIs'}</h6>
+                                    </div>
                                 )
                             } else {
                                 return (
-                                    <span key={i} className="material-icons">construction</span>
+                                    <div key={'container' + i}>
+                                        <span key={'comp' + i} className="material-icons">build</span>
+                                        <h6 key={'title' + i}>{tech}</h6>
+                                    </div>
                                 )
                             }
                         })

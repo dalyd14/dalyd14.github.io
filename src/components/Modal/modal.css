@@ -73,13 +73,26 @@ a.project-btn > *:first-child {
     margin: .5rem 0
 }
 
-.technologies-icons > * {
-    margin: 0 .5rem
+.technologies-icons div {
+    margin: 0 .5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technologies-icons h6 {
+    font-size: .75rem;
+    margin: .2rem 0 0 0;
 }
 
 @media only screen and (min-width: 450px) {
     a.project-btn {
         width: 50%;
+    }
+    .project-description {
+        margin: 1.5rem 1rem;
     }
 }
 
@@ -93,5 +106,16 @@ a.project-btn > *:first-child {
     .project-btn-group {
         flex-direction: row;
         justify-content: center;
+    }
+    .project-description {
+        width: 350px;
+        margin: 1.5rem auto;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .project-description {
+        width: 490px;
+        margin: 1.5rem auto;
     }
 }

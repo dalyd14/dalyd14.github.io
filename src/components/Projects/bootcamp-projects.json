@@ -3,7 +3,7 @@
         "title": "Tic-Tac-Whoa",
         "github_url": "https://github.com/jarrettdev1997/tic-tac-whoa",
         "site_url": "https://tic-tac-toe-project-two.herokuapp.com/",
-        "technologies": ["Mysql", "NodeDotJs", "Express", "SocketDotIo", "Handlebarsjs"],
+        "technologies": ["Mysql", "NodeDotJs", "Express", "SocketDotIo", "Handlebars.js"],
         "description": "Tic-Tac-Whoa was our second group project for the bootcamp (Week 16). This web-app was built so users can quickly and easily challenge their friends to online tic-tac-toe games. Users can view their persistent game history. Our group wanted to stretch the limits of what was required for us by integrating Socket.io technology so that real-time updates could be achieved."
     },
     {
