@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import validateEmail from './emailValidation'
 import './contact-form.css'
 
 const ContactForm = () => {
@@ -9,14 +10,33 @@ const ContactForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        // do something with the backend that isnt there yet
+        if (errorMessage) {
+            console.log('fix errors before submitting')
+        } else {
+            console.log(formInputs)
+        }
+
+        setFormInputs({ name: '', email: '', message: '' })
     }
     const handleChange = (e) => {
-        console.log("Handle change")
+        if (e.target.value.length < 1) {
+            e.target.classList.add('error-class')
+            setErrorMessage(`Please enter a${e.target.name === 'email' ? 'n' : ''} ${e.target.name} before submitting!`)
+        } else if (e.target.name === 'email' && !validateEmail(e.target.value)) {
+            e.target.classList.add('error-class')
+            setErrorMessage("Invalid email!")
+        } else {
+            e.target.classList.remove('error-class')
+            setErrorMessage()
+            setFormInputs({...formInputs, [e.target.name]: e.target.value})
+        }
     }
 
     return (
         <div>
-            <h1>Contact me</h1>
+            <h3>Contact me</h3>
+            <p><i>This form is for display purposes only</i></p>
             <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="form-container">
                     <div className="form-group row">
@@ -40,7 +60,7 @@ const ContactForm = () => {
                 </div>
                 {
                     errorMessage && (
-                        <div>
+                        <div className="error-message-div">
                             <p className="error-text">{errorMessage}</p>
                         </div>
                     )

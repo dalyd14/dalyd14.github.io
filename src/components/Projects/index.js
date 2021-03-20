@@ -31,7 +31,7 @@ const Projects = ({ type }) => {
             { projects.map((project, i) => (
                 <div className="project-sub-container" key={i}>
                     <div className="project" onClick={() => toggleModal(project, i)}>
-                        <img className="project-img" src={projectImages[i]} />
+                        <img className="project-img" src={projectImages[i]} alt={"image for " + project.title}/>
                     </div>
                     <h2>{project.title}</h2>
                 </div>

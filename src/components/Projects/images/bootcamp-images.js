@@ -5,7 +5,7 @@ import ticTacWhoaImg from './bootcamp/tic-tac-whoa.png'
 import timelessMoviesImg from './bootcamp/timeless-movies.png'
 import weatherDashboardImg from './bootcamp/weather-dashboard.jpg'
 
-export default [
+const bootcampImages = [
     ticTacWhoaImg,
     timelessMoviesImg,
     weatherDashboardImg,
@@ -13,3 +13,5 @@ export default [
     dailyPlannerImg,
     quizImg
 ]
+
+export default bootcampImages

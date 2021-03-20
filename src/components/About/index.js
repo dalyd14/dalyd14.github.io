@@ -20,7 +20,7 @@ const About = (props) => {
                 <p>
                     Feel free to browse my projects showcased throughout this portfolio and please reach out with any questions 
                     or if you would like to connect! Also, you can download my resume via the download button in the 
-                    bottom right corner or <span className="resume-link"><a href={pdf} download target="_blank">here</a></span>.
+                    bottom right corner or <span className="resume-link"><a href={pdf} download target="_blank" rel="noreferrer">here</a></span>.
                 </p>
                 <p>Happy Coding!</p>
             </div>  

@@ -27,7 +27,7 @@ const Contact = () => {
                     </a>  
                 </div>
                 <div className="contact-tile">
-                    <a href="https://github.com/dalyd14" target="_blank" >
+                    <a href="https://github.com/dalyd14" target="_blank" rel="noreferrer">
                         <Github className="react-icon"/>
                         <div className="contact-text">
                             GitHub
@@ -35,7 +35,7 @@ const Contact = () => {
                     </a>
                 </div>
                 <div className="contact-tile">
-                    <a href="https://www.linkedin.com/in/david-daly-a627a2b5" target="_blank" >
+                    <a href="https://www.linkedin.com/in/david-daly-a627a2b5" target="_blank" rel="noreferrer">
                         <Linkedin className="react-icon" />
                         <div className="contact-text">
                             LinkedIn

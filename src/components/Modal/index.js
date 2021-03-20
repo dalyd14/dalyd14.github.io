@@ -88,11 +88,11 @@ const Modal = ({ onClose, currentProject }) => {
                     }
                 </div>
                 <div className="project-btn-group">
-                    <a type="button" href={currentProject.site_url} target="_blank" className="project-btn btn btn-light">
+                    <a type="button" href={currentProject.site_url} target="_blank" rel="noreferrer" className="project-btn btn btn-light">
                         <span className="material-icons">language</span>
                         Visit Site
                     </a>
-                    <a type="button" href={currentProject.github_url} target="_blank" className="project-btn btn btn-light">
+                    <a type="button" href={currentProject.github_url} target="_blank" rel="noreferrer" className="project-btn btn btn-light">
                         <Github />
                         Visit GitHub
                     </a>                    
