@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4c6c94d1.chunk.css",
+    "main.js": "/static/js/main.6f34a5b8.chunk.js",
+    "main.js.map": "/static/js/main.6f34a5b8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.dc76d56f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.dc76d56f.js.map",
+    "static/css/2.fde61844.chunk.css": "/static/css/2.fde61844.chunk.css",
+    "static/js/2.8691d973.chunk.js": "/static/js/2.8691d973.chunk.js",
+    "static/js/2.8691d973.chunk.js.map": "/static/js/2.8691d973.chunk.js.map",
+    "static/js/3.0f6690e1.chunk.js": "/static/js/3.0f6690e1.chunk.js",
+    "static/js/3.0f6690e1.chunk.js.map": "/static/js/3.0f6690e1.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.fde61844.chunk.css.map": "/static/css/2.fde61844.chunk.css.map",
+    "static/css/main.4c6c94d1.chunk.css.map": "/static/css/main.4c6c94d1.chunk.css.map",
+    "static/js/2.8691d973.chunk.js.LICENSE.txt": "/static/js/2.8691d973.chunk.js.LICENSE.txt",
+    "static/media/David Daly Resume.5008df0f.pdf": "/static/media/David Daly Resume.5008df0f.pdf",
+    "static/media/material-icons.css": "/static/media/MaterialIcons-Regular.cff684e5.woff2",
+    "static/media/fishhawk.c69a495c.jpg": "/static/media/fishhawk.c69a495c.jpg",
+    "static/media/football.d7b50fb5.jpg": "/static/media/football.d7b50fb5.jpg",
+    "static/media/note-taker.0b6d1fec.png": "/static/media/note-taker.0b6d1fec.png",
+    "static/media/profile-pic.94cf65c4.jpg": "/static/media/profile-pic.94cf65c4.jpg",
+    "static/media/quiz.403b4f9d.jpg": "/static/media/quiz.403b4f9d.jpg",
+    "static/media/taskinator.1a6e9e77.png": "/static/media/taskinator.1a6e9e77.png",
+    "static/media/timeless-movies.5fc55fec.png": "/static/media/timeless-movies.5fc55fec.png",
+    "static/media/veggie-kales.02b0e30c.jpeg": "/static/media/veggie-kales.02b0e30c.jpeg",
+    "static/media/weather-dashboard.ed7fc10f.jpg": "/static/media/weather-dashboard.ed7fc10f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dc76d56f.js",
+    "static/css/2.fde61844.chunk.css",
+    "static/js/2.8691d973.chunk.js",
+    "static/css/main.4c6c94d1.chunk.css",
+    "static/js/main.6f34a5b8.chunk.js"
+  ]
+}
