@@ -7,6 +7,7 @@ import bootcampImages from './images/bootcamp-images'
 import personalImages from './images/personal-images'
 
 import Modal from '../Modal'
+import Footer from '../Footer'
 
 const Projects = ({ type }) => {
 
@@ -37,6 +38,7 @@ const Projects = ({ type }) => {
                 </div>
             )) }
         </div>
+        <Footer />
         </>
     )
 }

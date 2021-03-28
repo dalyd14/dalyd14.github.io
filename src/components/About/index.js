@@ -3,8 +3,11 @@ import picture from './profile-pic.jpg'
 import pdf from '../Resume/David Daly Resume.pdf'
 import './about.css'
 
+import Footer from '../Footer'
+
 const About = (props) => {
     return (
+        <>
         <div className="about-me-container">
             <img className="profile-pic" src={picture} alt="David Daly profile" />
             <div className="about-me-text">
@@ -23,8 +26,10 @@ const About = (props) => {
                     bottom right corner or <span className="resume-link"><a href={pdf} download target="_blank" rel="noreferrer">here</a></span>.
                 </p>
                 <p>Happy Coding!</p>
-            </div>  
+            </div>    
         </div>
+        <Footer />
+        </>
     )
 }
 

@@ -1,0 +1,44 @@
+.footer {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 10px;
+}
+.footer-tile a {
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-text {
+    margin-top: 1rem;
+}
+
+.footer-tile .material-icons,
+.react-icon,
+.contact-text {
+    color: var(--gunmetal);
+}
+
+.footer-tile .material-icons {
+    font-size: 2rem;
+}
+.react-icon {
+    height: 2rem;
+    width: 2rem;
+}
