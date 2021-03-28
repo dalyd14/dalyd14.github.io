@@ -20,12 +20,12 @@ const Footer = () => {
                 </div>
                 <div className="footer-tile">
                     <a href="https://github.com/dalyd14" target="_blank" rel="noreferrer">
-                        <Github className="react-icon"/>                  
+                        <Github className="react-icon-footer"/>                  
                     </a>
                 </div>
                 <div className="footer-tile">
                     <a href="https://www.linkedin.com/in/david-daly-a627a2b5" target="_blank" rel="noreferrer">
-                        <Linkedin className="react-icon" />
+                        <Linkedin className="react-icon-footer" />
                     </a>  
                 </div>
             </div>

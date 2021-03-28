@@ -30,7 +30,7 @@
 }
 
 .footer-tile .material-icons,
-.react-icon,
+.react-icon-footer,
 .contact-text {
     color: var(--gunmetal);
 }
@@ -38,7 +38,7 @@
 .footer-tile .material-icons {
     font-size: 2rem;
 }
-.react-icon {
+.react-icon-footer {
     height: 2rem;
     width: 2rem;
 }
