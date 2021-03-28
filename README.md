@@ -4,7 +4,7 @@
 * [Installation](#installation)
 * [Questions](#questions)
 
-![Portfolio Screenshot](./screen-shot.PNG)
+![Portfolio Screenshot](./readme-assets/screen-shot.PNG)
 
 ## Project Description
 This is my professional and personal coding portfolio. It was built using React. It showcases just a few of my coding projects from personal experience and my bootcamp experience

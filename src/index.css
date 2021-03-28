@@ -6,8 +6,11 @@
   --burnt-sienna: #EE6C4D;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Noto+Sans+JP&family=Nanum+Gothic&display=swap');
+
 * {
   box-sizing: border-box;
+  font-family: 'Nanum Gothic';
 }
 
 html, body {

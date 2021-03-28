@@ -51,7 +51,7 @@ const Nav = (props) => {
                             onClick={pressMenu}>menu</span>
                     </div>
 
-                    <h1>David Daly</h1>
+                    <h1>DAVID DALY</h1>
                 </li>
                 <li className="file-cabinet-page-header">
                     <h3>Menu</h3>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ContactForm from './ContactForm'
+// import ContactForm from './ContactForm'
 
 import { Github, Linkedin } from '@icons-pack/react-simple-icons'
 

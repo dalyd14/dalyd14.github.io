@@ -33,6 +33,10 @@ nav {
     transition: color 600ms;
 }
 
+.file-cabinet-menu h1 {
+    font-family: 'Domine';
+}
+
 .file-cabinet-menu.menu-pressed {
     color: var(--gunmetal)
 }
@@ -46,6 +50,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.file-cabinet-page-header h3, .file-item h3 { 
+    font-weight: bold;
+    font-family: 'Noto Sans JP';
 }
 
 .file-cabinet-page-header h3 {
