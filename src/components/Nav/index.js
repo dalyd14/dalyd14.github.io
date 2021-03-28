@@ -45,7 +45,7 @@ const Nav = (props) => {
         <nav>
             <ul className="file-cabinet">
                 <li className={'file-cabinet-menu ' + (menuPressed ? 'menu-pressed' : '')}>
-                    <div className="menu-button-div">
+                    <div className={'menu-button-div ' + (menuPressed ? 'invisible' : '')}>
                         <span 
                             className="material-icons cursor-pointer" 
                             onClick={pressMenu}>menu</span>

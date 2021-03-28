@@ -44,6 +44,15 @@ a.resume-button span {
     font-size: 1.5rem;
 }
 
+p.resume-label {
+    color: var(--gunmetal);
+    margin: 0;
+    padding: 0;
+
+    font-size: .5rem;
+
+}
+
 @media only screen and (min-width: 325px) {
     a.resume-button {
         height: 50px;
@@ -51,6 +60,10 @@ a.resume-button span {
     }
     a.resume-button span {
         font-size: 2rem;
+    }
+    p.resume-label {
+        font-size: .65rem;
+        font-weight: bold;
     }
 }
 

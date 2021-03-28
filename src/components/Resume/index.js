@@ -9,8 +9,9 @@ const Resume = (props) => {
     } = props
 
     return (
-        <a className={'resume-button ' + (menuPressed ? '' : 'bottom')} href={pdf} download target="_blank" rel="noreferrer">
-            <span className="material-icons">file_download</span>
+        <a className={'d-flex flex-column resume-button ' + (menuPressed ? '' : 'bottom')} href={pdf} download target="_blank" rel="noreferrer">
+            <span className="material-icons">description</span>
+            <p className="resume-label">CV</p>
         </a>
     )
 }
