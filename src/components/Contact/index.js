@@ -21,7 +21,7 @@ const Contact = () => {
                 <div className="contact-tile">
                     <a href="mailto:dalyd14@gmail.com">
                         <span className="material-icons">mail_outline</span>
-                        <div className="contact-text" style={{fontSize: ".85rem"}}>
+                        <div className="contact-text email">
                             dalyd14@gmail.com
                         </div>                      
                     </a>  
