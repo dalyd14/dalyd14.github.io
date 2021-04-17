@@ -1,5 +1,12 @@
 [
     {
+        "title": "Steep",
+        "github_url": "https://github.com/Gintstir/Tea-App",
+        "site_url": "https://steep-tea-app.herokuapp.com/",
+        "technologies": ["ReactJs", "NodeDotJs", "Express", "MongoDb", "ApolloGQL", "AmazonS3"],
+        "description": "Steep was our third group project for the bootcamp (Week 24). This web-app is a MERN app with Apollo Server Graphql. It also has capability of taking and uploading pictures of your favorite teas (and mugs). The app is deployed to Heroku and the images are stored on an Amazon S3 bucket. Steep is designed for tea enthusiasts of all stages, from their first cup of bagged tea, to ceremony grade matcha. This app is fun, approachable, and quick. While the app can be used in a detailed fashion, it can also be something you sign into and quickly check a recipe. You can also view tea recipes that users fro all over are brewing."
+    },
+    {
         "title": "Tic-Tac-Whoa",
         "github_url": "https://github.com/jarrettdev1997/tic-tac-whoa",
         "site_url": "https://tic-tac-toe-project-two.herokuapp.com/",

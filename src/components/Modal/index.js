@@ -1,8 +1,8 @@
 import React from 'react'
 import './modal.css'
 
-import { Github, Mongodb, Mysql, Javascript, CssThree, 
-    Html5, NodeDotJs, Express, Jquery, SocketDotIo, Bootstrap } from '@icons-pack/react-simple-icons'
+import { Github, Mysql, Javascript, CssThree, 
+    Html5, NodeDotJs, Express, Jquery, SocketDotIo, Bootstrap, ReactJs, Amazonaws, Mongodb, Apollographql } from '@icons-pack/react-simple-icons'
 
 const Technologies = {
     "Html5": {
@@ -44,6 +44,18 @@ const Technologies = {
     "SocketDotIo": {
         comp: SocketDotIo,
         title: "socket.io"
+    },
+    "ReactJs": {
+        comp: ReactJs,
+        title: "React.js"
+    },
+    "AmazonS3": {
+        comp: Amazonaws,
+        title: "Amazon S3"
+    },
+    "ApolloGQL": {
+        comp: Apollographql,
+        title: "Apollo GQL"
     }
 
 }
